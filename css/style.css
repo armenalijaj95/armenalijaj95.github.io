@@ -287,7 +287,7 @@ nav a:hover::after {
     background-size: 200% 200%;
     animation: gradient 15s ease infinite;
     color: var(--white);
-    padding: 140px 0 100px;
+    padding: 100px 0 80px;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -354,7 +354,7 @@ nav a:hover::after {
 
 /* Section Styles */
 .section {
-    padding: 120px 0;
+    padding: 80px 0;
     position: relative;
 }
 
@@ -377,7 +377,7 @@ nav a:hover::after {
 
 .section-header {
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 }
 
 .section-title {
@@ -556,6 +556,47 @@ nav a:hover::after {
 .product-price span {
     font-size: 16px;
     font-weight: 500;
+    color: var(--text-light);
+}
+
+/* Trust Section */
+.trust-section {
+    background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+    padding: 60px 0;
+    border-top: 1px solid rgba(102, 126, 234, 0.1);
+    border-bottom: 1px solid rgba(102, 126, 234, 0.1);
+}
+
+.trust-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    text-align: center;
+}
+
+.trust-item {
+    transition: transform 0.3s;
+}
+
+.trust-item:hover {
+    transform: translateY(-5px);
+}
+
+.trust-icon {
+    font-size: 48px;
+    margin-bottom: 16px;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
+}
+
+.trust-item h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 8px;
+}
+
+.trust-item p {
+    font-size: 14px;
     color: var(--text-light);
 }
 
