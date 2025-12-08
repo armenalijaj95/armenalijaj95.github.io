@@ -25,8 +25,24 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     line-height: 1.6;
     color: var(--text-dark);
-    background: var(--bg-light);
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     overflow-x: hidden;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        linear-gradient(rgba(102, 126, 234, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(102, 126, 234, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+    pointer-events: none;
+    z-index: -1;
 }
 
 .container {
@@ -114,16 +130,18 @@ body {
 
 /* Header Styles */
 header {
-    background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: var(--blur);
-    -webkit-backdrop-filter: var(--blur);
-    box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(30px) saturate(180%);
+    -webkit-backdrop-filter: blur(30px) saturate(180%);
+    box-shadow: 
+        0 4px 30px rgba(0, 0, 0, 0.08),
+        inset 0 1px 1px rgba(255, 255, 255, 0.9);
     padding: 20px 0;
     position: sticky;
     top: 0;
     z-index: 100;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    border-bottom: 1px solid rgba(102, 126, 234, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .header-content {
@@ -356,7 +374,7 @@ nav a:hover::after {
 .section {
     padding: 80px 0;
     position: relative;
-    background: var(--bg-light);
+    background: transparent;
 }
 
 .section-dark {
@@ -407,13 +425,16 @@ nav a:hover::after {
 }
 
 .product-card {
-    background: rgba(255, 255, 255, 0.9);
-    backdrop-filter: var(--blur);
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(30px) saturate(180%);
+    -webkit-backdrop-filter: blur(30px) saturate(180%);
     border-radius: 24px;
     padding: 50px;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+    box-shadow: 
+        0 8px 32px rgba(102, 126, 234, 0.15),
+        inset 0 1px 1px rgba(255, 255, 255, 0.9);
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    border: 2px solid rgba(102, 126, 234, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
     position: relative;
     overflow: hidden;
 }
@@ -436,8 +457,11 @@ nav a:hover::after {
 
 .product-card:hover {
     transform: translateY(-16px) scale(1.02);
-    box-shadow: 0 25px 60px rgba(102, 126, 234, 0.25);
-    border-color: rgba(102, 126, 234, 0.3);
+    box-shadow: 
+        0 25px 60px rgba(102, 126, 234, 0.3),
+        inset 0 1px 1px rgba(255, 255, 255, 1);
+    border-color: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.85);
 }
 
 .product-card.featured {
@@ -610,18 +634,24 @@ nav a:hover::after {
 
 .feature-card {
     padding: 50px;
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: var(--blur);
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(30px) saturate(180%);
+    -webkit-backdrop-filter: blur(30px) saturate(180%);
     border-radius: 20px;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    border: 2px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.15),
+        inset 0 1px 1px rgba(255, 255, 255, 0.1);
 }
 
 .feature-card:hover {
     transform: translateY(-12px);
-    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
-    background: rgba(255, 255, 255, 0.08);
-    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 
+        0 25px 50px rgba(0, 0, 0, 0.3),
+        inset 0 1px 1px rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.3);
 }
 
 .feature-icon-wrapper {
@@ -777,17 +807,25 @@ footer::before {
 
 /* Pricing Card */
 .pricing-card {
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: var(--blur);
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(30px) saturate(180%);
+    -webkit-backdrop-filter: blur(30px) saturate(180%);
     border-radius: 24px;
     padding: 50px 40px;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    box-shadow: 
+        0 8px 32px rgba(102, 126, 234, 0.2),
+        inset 0 1px 1px rgba(255, 255, 255, 0.9);
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .pricing-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 20px 50px rgba(102, 126, 234, 0.2);
+    box-shadow: 
+        0 20px 50px rgba(102, 126, 234, 0.3),
+        inset 0 1px 1px rgba(255, 255, 255, 1);
+    background: rgba(255, 255, 255, 0.85);
+    border-color: rgba(255, 255, 255, 0.8);
 }
 
 .price {
@@ -836,9 +874,13 @@ footer::before {
 
 /* Features Section on Product Page - Override for white background */
 .section:not(.section-dark) .feature-card {
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: var(--blur);
-    border: 2px solid rgba(102, 126, 234, 0.1);
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(30px) saturate(180%);
+    -webkit-backdrop-filter: blur(30px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 
+        0 8px 32px rgba(102, 126, 234, 0.12),
+        inset 0 1px 1px rgba(255, 255, 255, 0.9);
 }
 
 .section:not(.section-dark) .feature-card h3 {
@@ -850,9 +892,11 @@ footer::before {
 }
 
 .section:not(.section-dark) .feature-card:hover {
-    box-shadow: 0 20px 50px rgba(102, 126, 234, 0.15);
-    background: rgba(255, 255, 255, 1);
-    border-color: rgba(102, 126, 234, 0.3);
+    box-shadow: 
+        0 20px 50px rgba(102, 126, 234, 0.2),
+        inset 0 1px 1px rgba(255, 255, 255, 1);
+    background: rgba(255, 255, 255, 0.85);
+    border-color: rgba(255, 255, 255, 0.8);
 }
 
 /* Responsive Design */
