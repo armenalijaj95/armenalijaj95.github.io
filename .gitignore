@@ -1,7 +1,12 @@
-# Documentation files (keep local, don't upload)
+# Documentation files (keep local, don't upload to public repo)
 README.md
 DEPLOYMENT.md
 deploy.sh
+POLISH_AUDIT_REPORT.md
+WEBSITE_UPDATE_SUMMARY.md
+*_SUMMARY.md
+*_GUIDE.md
+*_REPORT.md
 
 # Development files
 .DS_Store
@@ -10,3 +15,7 @@ deploy.sh
 # Backup files
 *.bak
 *~
+
+# Any internal documentation
+docs/
+notes/
