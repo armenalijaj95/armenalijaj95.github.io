@@ -843,11 +843,5 @@ footer::before {
 
 /* Scroll animations */
 @media (prefers-reduced-motion: no-preference) {
-    .section,
-    .product-card,
-    .feature-card {
-        opacity: 0;
-        transform: translateY(30px);
-        transition: opacity 0.6s ease, transform 0.6s ease;
-    }
+    /* Animations handled by JavaScript */
 }
