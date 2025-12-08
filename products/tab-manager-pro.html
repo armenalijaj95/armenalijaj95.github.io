@@ -8,16 +8,26 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+    <!-- Animated Background -->
+    <div class="background-animation">
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
+        <div class="circle circle-3"></div>
+    </div>
+
     <!-- Header -->
     <header>
         <div class="container">
             <div class="header-content">
-                <a href="../index.html" class="logo">Armen Alijaj</a>
+                <a href="../index.html" class="logo">
+                    <span class="logo-icon">⚡</span>
+                    Armen Alijaj
+                </a>
                 <nav>
                     <ul>
                         <li><a href="../index.html#products">Products</a></li>
                         <li><a href="../index.html#about">About</a></li>
-                        <li><a href="mailto:armenalijaj2012@gmail.com">Contact</a></li>
+                        <li><a href="mailto:armenalijaj2012@gmail.com" class="nav-cta">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -27,112 +37,160 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
+            <div class="hero-badge">📑 Chrome Extension</div>
             <h1>Tab Manager Pro</h1>
-            <p>Save & restore your browser tab groups with one click</p>
-            <p style="opacity: 0.8; font-size: 16px; margin-top: 10px;">by Armen Alijaj</p>
-            <a href="https://chrome.google.com/webstore/detail/ieendfnemamipdokaeakaegmjalmhdfp" class="btn btn-primary" target="_blank" style="font-size: 18px; padding: 16px 32px;">
-                Install Extension - $3.99/month
-            </a>
+            <p>Save & restore your browser tab groups with one click. Never lose your workflow again.</p>
+            <div class="hero-cta">
+                <a href="https://chromewebstore.google.com/detail/tab-manager-pro-save-rest/ieendfnemamipdokaeakaegmjalmhdfp" class="btn btn-primary" target="_blank">
+                    Add to Chrome - Free to Try
+                </a>
+                <a href="#pricing" class="btn btn-secondary">See Pricing</a>
+            </div>
         </div>
     </section>
 
     <!-- Features Section -->
-    <section class="section" style="background: white;">
+    <section class="section" id="features">
         <div class="container">
-            <h2 class="section-title">Powerful Features</h2>
-            <p class="section-subtitle">Everything you need to manage your tab groups</p>
+            <div class="section-header">
+                <h2 class="section-title">Powerful Features</h2>
+                <p class="section-subtitle">Everything you need to manage your tab groups</p>
+            </div>
             
             <div class="features-grid">
                 <div class="feature-card">
-                    <div class="feature-icon">💾</div>
+                    <div class="feature-icon-wrapper">
+                        <div class="feature-icon">💾</div>
+                    </div>
                     <h3>Unlimited Saved Groups</h3>
-                    <p>Save as many tab groups as you need. Organize your work by project, topic, or any way that suits you.</p>
+                    <p>Save as many tab groups as you need with Pro. Organize your work by project, topic, or any way that suits you.</p>
                 </div>
                 
                 <div class="feature-card">
-                    <div class="feature-icon">⚡</div>
+                    <div class="feature-icon-wrapper">
+                        <div class="feature-icon">⚡</div>
+                    </div>
                     <h3>One-Click Restore</h3>
                     <p>Instantly restore any saved tab group exactly as it was. Get back to work in seconds.</p>
                 </div>
                 
                 <div class="feature-card">
-                    <div class="feature-icon">🔄</div>
-                    <h3>Cross-Device Sync</h3>
-                    <p>Access your saved tab groups across all your devices. Start on desktop, continue on laptop.</p>
+                    <div class="feature-icon-wrapper">
+                        <div class="feature-icon">🎨</div>
+                    </div>
+                    <h3>Color-Coded Groups</h3>
+                    <p>Tab group colors and names are preserved automatically. Choose from 8 beautiful colors for perfect organization.</p>
                 </div>
                 
                 <div class="feature-card">
-                    <div class="feature-icon">🎨</div>
-                    <h3>Preserve Group Colors</h3>
-                    <p>Your tab group colors and names are saved automatically. Everything stays organized.</p>
+                    <div class="feature-icon-wrapper">
+                        <div class="feature-icon">🔒</div>
+                    </div>
+                    <h3>Privacy First</h3>
+                    <p>Your data stays on your device. No cloud storage, no accounts required, completely private.</p>
                 </div>
                 
                 <div class="feature-card">
-                    <div class="feature-icon">🔒</div>
-                    <h3>Secure & Private</h3>
-                    <p>Your data is encrypted and stored securely. We never share your information.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">⚙️</div>
+                    <div class="feature-icon-wrapper">
+                        <div class="feature-icon">⚙️</div>
+                    </div>
                     <h3>Easy to Use</h3>
-                    <p>Clean, intuitive interface. No learning curve. Start saving tab groups immediately.</p>
+                    <p>Clean, modern interface. No learning curve. Start saving tab groups immediately.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <div class="feature-icon">🚀</div>
+                    </div>
+                    <h3>Lightning Fast</h3>
+                    <p>Built with performance in mind. No bloat, no lag, just tools that work instantly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">How It Works</h2>
+                <p class="section-subtitle">Getting started is simple</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <div class="feature-icon">1️⃣</div>
+                    </div>
+                    <h3>Install Extension</h3>
+                    <p>Add Tab Manager Pro to Chrome from the Web Store. Takes just one click.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <div class="feature-icon">2️⃣</div>
+                    </div>
+                    <h3>Save Tab Groups</h3>
+                    <p>Click the extension icon, name your group, choose a color, and save. Your tabs are now safe.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">
+                        <div class="feature-icon">3️⃣</div>
+                    </div>
+                    <h3>Restore Anytime</h3>
+                    <p>Open the extension, select a saved group, and click restore. All tabs open instantly in a colored tab group.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Pricing Section -->
-    <section class="section">
+    <section class="section" id="pricing">
         <div class="container">
-            <h2 class="section-title">Simple Pricing</h2>
-            <p class="section-subtitle">One plan, all features included</p>
-            
-            <div class="pricing-card">
-                <h3>Tab Manager Pro</h3>
-                <div class="price">
-                    $3.99
-                    <span class="price-period">/month</span>
-                </div>
-                <ul class="pricing-features">
-                    <li>Unlimited saved tab groups</li>
-                    <li>One-click restore</li>
-                    <li>Cross-device sync</li>
-                    <li>Color & name preservation</li>
-                    <li>Regular updates</li>
-                    <li>Email support</li>
-                    <li>Cancel anytime</li>
-                </ul>
-                <a href="https://chrome.google.com/webstore/detail/ieendfnemamipdokaeakaegmjalmhdfp" class="btn btn-primary" target="_blank" style="width: 100%; text-align: center;">
-                    Get Started Now
-                </a>
+            <div class="section-header">
+                <h2 class="section-title">Simple Pricing</h2>
+                <p class="section-subtitle">Start free, upgrade when you need more</p>
             </div>
-        </div>
-    </section>
-
-    <!-- How It Works Section -->
-    <section class="section" style="background: white;">
-        <div class="container">
-            <h2 class="section-title">How It Works</h2>
-            <p class="section-subtitle">Getting started is simple</p>
             
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">1️⃣</div>
-                    <h3>Install Extension</h3>
-                    <p>Add Tab Manager Pro to Chrome from the Web Store. Takes just one click.</p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; max-width: 900px; margin: 0 auto;">
+                <!-- Free Plan -->
+                <div class="pricing-card" style="border: 2px solid #e2e8f0;">
+                    <h3 style="font-size: 24px; margin-bottom: 20px; color: var(--text-dark);">Free</h3>
+                    <div class="price">
+                        $0
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Save up to 5 tab groups</li>
+                        <li>One-click restore</li>
+                        <li>8 beautiful colors</li>
+                        <li>Local storage</li>
+                        <li>Chrome tab group integration</li>
+                    </ul>
+                    <a href="https://chromewebstore.google.com/detail/tab-manager-pro-save-rest/ieendfnemamipdokaeakaegmjalmhdfp" class="btn btn-outline" target="_blank" style="width: 100%; text-align: center;">
+                        Get Started Free
+                    </a>
                 </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">2️⃣</div>
-                    <h3>Save Tab Groups</h3>
-                    <p>Right-click any tab group and select "Save Group". Your tabs are now saved.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">3️⃣</div>
-                    <h3>Restore Anytime</h3>
-                    <p>Open the extension, select a saved group, and click restore. All tabs open instantly.</p>
+
+                <!-- Pro Plan -->
+                <div class="pricing-card" style="border: 3px solid var(--primary-color); position: relative;">
+                    <div style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); color: white; padding: 6px 20px; border-radius: 50px; font-size: 12px; font-weight: 700;">MOST POPULAR</div>
+                    <h3 style="font-size: 24px; margin-bottom: 20px; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Pro</h3>
+                    <div class="price" style="margin: 30px 0;">
+                        $3.99
+                        <span class="price-period">/month</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Unlimited saved tab groups</li>
+                        <li>All colors & customization</li>
+                        <li>One-click restore</li>
+                        <li>Priority support</li>
+                        <li>Regular updates</li>
+                        <li>Cancel anytime</li>
+                    </ul>
+                    <a href="https://armenapps.lemonsqueezy.com/buy/6eeba851-0a8c-49db-9e7f-bdffd6cbfe8e" class="btn btn-primary" target="_blank" style="width: 100%; text-align: center;">
+                        Upgrade to Pro
+                    </a>
                 </div>
             </div>
         </div>
@@ -142,15 +200,24 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Armen Alijaj</h3>
+                <div class="footer-section footer-brand">
+                    <h3>
+                        <span class="logo-icon">⚡</span>
+                        Armen Alijaj
+                    </h3>
                     <p>Independent developer creating productivity tools. Built with care, one extension at a time.</p>
+                    <div class="social-links">
+                        <a href="mailto:armenalijaj2012@gmail.com" class="social-link" title="Email">
+                            <span>✉️</span>
+                        </a>
+                    </div>
                 </div>
                 
                 <div class="footer-section">
                     <h3>Products</h3>
                     <ul>
                         <li><a href="tab-manager-pro.html">Tab Manager Pro</a></li>
+                        <li><a href="../index.html#products">More Coming Soon</a></li>
                     </ul>
                 </div>
                 
@@ -172,8 +239,22 @@
             
             <div class="footer-bottom">
                 <p>&copy; 2025 Armen Alijaj. All rights reserved.</p>
+                <p class="footer-tagline">Crafted with 💜 and caffeine</p>
             </div>
         </div>
     </footer>
+
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
