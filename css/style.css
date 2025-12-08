@@ -356,6 +356,7 @@ nav a:hover::after {
 .section {
     padding: 80px 0;
     position: relative;
+    background: var(--bg-light);
 }
 
 .section-dark {
@@ -772,6 +773,86 @@ footer::before {
 
 .footer-tagline {
     font-style: italic;
+}
+
+/* Pricing Card */
+.pricing-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: var(--blur);
+    border-radius: 24px;
+    padding: 50px 40px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.pricing-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 50px rgba(102, 126, 234, 0.2);
+}
+
+.price {
+    font-size: 56px;
+    font-weight: 900;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 20px 0 30px;
+}
+
+.price-period {
+    font-size: 20px;
+    color: var(--text-light);
+    font-weight: 500;
+}
+
+.pricing-features {
+    list-style: none;
+    margin: 30px 0;
+    text-align: left;
+}
+
+.pricing-features li {
+    padding: 14px 0;
+    border-bottom: 1px solid rgba(102, 126, 234, 0.1);
+    color: var(--text-dark);
+    font-size: 16px;
+    position: relative;
+    padding-left: 32px;
+}
+
+.pricing-features li:last-child {
+    border-bottom: none;
+}
+
+.pricing-features li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--success-color);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Features Section on Product Page - Override for white background */
+.section:not(.section-dark) .feature-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: var(--blur);
+    border: 2px solid rgba(102, 126, 234, 0.1);
+}
+
+.section:not(.section-dark) .feature-card h3 {
+    color: var(--text-dark);
+}
+
+.section:not(.section-dark) .feature-card p {
+    color: var(--text-light);
+}
+
+.section:not(.section-dark) .feature-card:hover {
+    box-shadow: 0 20px 50px rgba(102, 126, 234, 0.15);
+    background: rgba(255, 255, 255, 1);
+    border-color: rgba(102, 126, 234, 0.3);
 }
 
 /* Responsive Design */
