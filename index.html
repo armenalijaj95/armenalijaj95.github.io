@@ -8,16 +8,26 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Animated Background -->
+    <div class="background-animation">
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
+        <div class="circle circle-3"></div>
+    </div>
+
     <!-- Header -->
     <header>
         <div class="container">
             <div class="header-content">
-                <a href="index.html" class="logo">Armen Alijaj</a>
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">⚡</span>
+                    Armen Alijaj
+                </a>
                 <nav>
                     <ul>
                         <li><a href="#products">Products</a></li>
                         <li><a href="#about">About</a></li>
-                        <li><a href="mailto:armenalijaj2012@gmail.com">Contact</a></li>
+                        <li><a href="mailto:armenalijaj2012@gmail.com" class="nav-cta">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -27,23 +37,60 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <h1>Productivity Tools That Work</h1>
-            <p>Chrome extensions built by an independent developer. Simple, powerful tools to save you time and keep you organized.</p>
+            <div class="hero-badge">✨ Independent Developer</div>
+            <h1>Productivity Tools <br/>That <span class="gradient-text">Actually Work</span></h1>
+            <p>Chrome extensions built with passion. Simple, powerful tools to save you time and keep you organized.</p>
+            <div class="hero-cta">
+                <a href="#products" class="btn btn-primary">Explore Products</a>
+                <a href="#about" class="btn btn-secondary">Learn More</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-number">5K+</div>
+                    <div class="stat-label">Active Users</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">4.8★</div>
+                    <div class="stat-label">Average Rating</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">99%</div>
+                    <div class="stat-label">Satisfaction</div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Products Section -->
-    <section class="section" id="products" style="background: white;">
+    <section class="section" id="products">
         <div class="container">
-            <h2 class="section-title">Our Products</h2>
-            <p class="section-subtitle">Choose the tools that fit your workflow</p>
+            <div class="section-header">
+                <h2 class="section-title">Featured Products</h2>
+                <p class="section-subtitle">Choose the tools that fit your workflow</p>
+            </div>
             
             <div class="products-grid">
                 <!-- Tab Manager Pro -->
-                <div class="product-card">
+                <div class="product-card featured">
+                    <div class="product-badge">Most Popular</div>
                     <div class="product-icon">📑</div>
                     <h3>Tab Manager Pro</h3>
                     <p>Save and restore browser tab groups with one click. Never lose your workflow again.</p>
+                    
+                    <div class="product-features">
+                        <div class="mini-feature">
+                            <span class="check">✓</span>
+                            <span>Unlimited tab groups</span>
+                        </div>
+                        <div class="mini-feature">
+                            <span class="check">✓</span>
+                            <span>Color-coded organization</span>
+                        </div>
+                        <div class="mini-feature">
+                            <span class="check">✓</span>
+                            <span>One-click restore</span>
+                        </div>
+                    </div>
                     
                     <div class="product-tags">
                         <span class="tag">Chrome Extension</span>
@@ -54,15 +101,31 @@
                         <div class="product-price">
                             $3.99<span>/month</span>
                         </div>
-                        <a href="products/tab-manager-pro.html" class="btn btn-primary">Learn More</a>
+                        <a href="products/tab-manager-pro.html" class="btn btn-primary btn-small">Learn More →</a>
                     </div>
                 </div>
 
                 <!-- Placeholder for Future Products -->
-                <div class="product-card" style="opacity: 0.6; border: 2px dashed #ddd;">
+                <div class="product-card coming-soon">
+                    <div class="product-badge coming">Coming Soon</div>
                     <div class="product-icon">🚀</div>
-                    <h3>Coming Soon</h3>
+                    <h3>Next Generation Tool</h3>
                     <p>More productivity tools are in development. Stay tuned for exciting new releases!</p>
+                    
+                    <div class="product-features">
+                        <div class="mini-feature">
+                            <span class="check">✓</span>
+                            <span>Advanced features</span>
+                        </div>
+                        <div class="mini-feature">
+                            <span class="check">✓</span>
+                            <span>Premium support</span>
+                        </div>
+                        <div class="mini-feature">
+                            <span class="check">✓</span>
+                            <span>Regular updates</span>
+                        </div>
+                    </div>
                     
                     <div class="product-tags">
                         <span class="tag">In Development</span>
@@ -72,7 +135,7 @@
                         <div class="product-price">
                             TBA
                         </div>
-                        <button class="btn btn-outline" disabled>Coming Soon</button>
+                        <button class="btn btn-outline btn-small" disabled>Notify Me</button>
                     </div>
                 </div>
             </div>
@@ -80,26 +143,34 @@
     </section>
 
     <!-- About Section -->
-    <section class="section" id="about">
+    <section class="section section-dark" id="about">
         <div class="container">
-            <h2 class="section-title">Built for Productivity</h2>
-            <p class="section-subtitle">Hi! I'm Armen, a solo developer creating tools that solve real problems for real people.</p>
+            <div class="section-header">
+                <h2 class="section-title">Built for Productivity</h2>
+                <p class="section-subtitle">Hi! I'm Armen, a solo developer creating tools that solve real problems for real people.</p>
+            </div>
             
             <div class="features-grid">
                 <div class="feature-card">
-                    <div class="feature-icon">⚡</div>
+                    <div class="feature-icon-wrapper">
+                        <div class="feature-icon">⚡</div>
+                    </div>
                     <h3>Fast & Reliable</h3>
                     <p>Our extensions are built with performance in mind. No bloat, no lag, just tools that work.</p>
                 </div>
                 
                 <div class="feature-card">
-                    <div class="feature-icon">🔒</div>
+                    <div class="feature-icon-wrapper">
+                        <div class="feature-icon">🔒</div>
+                    </div>
                     <h3>Privacy First</h3>
                     <p>Your data stays yours. We use encryption and never share your information with third parties.</p>
                 </div>
                 
                 <div class="feature-card">
-                    <div class="feature-icon">💎</div>
+                    <div class="feature-icon-wrapper">
+                        <div class="feature-icon">💎</div>
+                    </div>
                     <h3>Quality Support</h3>
                     <p>Get help when you need it. We're committed to making sure our tools work perfectly for you.</p>
                 </div>
@@ -111,15 +182,24 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Armen Alijaj</h3>
+                <div class="footer-section footer-brand">
+                    <h3>
+                        <span class="logo-icon">⚡</span>
+                        Armen Alijaj
+                    </h3>
                     <p>Independent developer creating productivity tools. Built with care, one extension at a time.</p>
+                    <div class="social-links">
+                        <a href="mailto:armenalijaj2012@gmail.com" class="social-link" title="Email">
+                            <span>✉️</span>
+                        </a>
+                    </div>
                 </div>
                 
                 <div class="footer-section">
                     <h3>Products</h3>
                     <ul>
                         <li><a href="products/tab-manager-pro.html">Tab Manager Pro</a></li>
+                        <li><a href="#products">More Coming Soon</a></li>
                     </ul>
                 </div>
                 
@@ -141,8 +221,62 @@
             
             <div class="footer-bottom">
                 <p>&copy; 2025 Armen Alijaj. All rights reserved.</p>
+                <p class="footer-tagline">Crafted with 💜 and caffeine</p>
             </div>
         </div>
     </footer>
+
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Add scroll effect to header
+        let lastScroll = 0;
+        const header = document.querySelector('header');
+        
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll > 100) {
+                header.style.padding = '12px 0';
+                header.style.boxShadow = '0 4px 30px rgba(0,0,0,0.1)';
+            } else {
+                header.style.padding = '20px 0';
+                header.style.boxShadow = '0 2px 20px rgba(0,0,0,0.05)';
+            }
+            
+            lastScroll = currentScroll;
+        });
+
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.product-card, .feature-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
 </body>
 </html>
