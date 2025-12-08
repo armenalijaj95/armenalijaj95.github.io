@@ -1,0 +1,12 @@
+# Documentation files (keep local, don't upload)
+README.md
+DEPLOYMENT.md
+deploy.sh
+
+# Development files
+.DS_Store
+*.log
+
+# Backup files
+*.bak
+*~
