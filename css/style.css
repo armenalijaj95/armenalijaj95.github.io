@@ -349,32 +349,7 @@ nav a:hover::after {
     display: flex;
     gap: 20px;
     justify-content: center;
-    margin-bottom: 60px;
     animation: fadeIn 1s ease 0.6s both;
-}
-
-.hero-stats {
-    display: flex;
-    justify-content: center;
-    gap: 60px;
-    animation: fadeIn 1s ease 0.8s both;
-}
-
-.stat {
-    text-align: center;
-}
-
-.stat-number {
-    font-size: 36px;
-    font-weight: 800;
-    margin-bottom: 8px;
-}
-
-.stat-label {
-    font-size: 14px;
-    opacity: 0.9;
-    text-transform: uppercase;
-    letter-spacing: 1px;
 }
 
 /* Section Styles */
